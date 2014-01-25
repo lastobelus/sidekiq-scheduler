@@ -42,6 +42,10 @@ module SidekiqScheduler
       clear_scheduled_work
     end
 
+    alias_method :reset!, :reset
+    alias_method :stop!, :stop
+    alias_method :start!, :start
+
   end
 
 end
